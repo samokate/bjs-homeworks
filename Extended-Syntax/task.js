@@ -15,12 +15,9 @@ function getResult(a,b,c){
     let x = [];
 
     if (d > 0) {
-      const x1 = (-b + Math.sqrt(d)) / (2 * a); 
-      const x2 = (-b - Math.sqrt(d)) / (2 * a);
-      x = [x1, x2];
+      x.push((-b + Math.sqrt(d)) / (2 * a), (-b - Math.sqrt(d)) / (2 * a)); 
     } else if (d === 0) {
-      x1 = -b / (2 * a);
-      x = [x1];
+      x.push(-b / (2 * a));
     } 
 
     return x;

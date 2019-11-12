@@ -45,9 +45,7 @@ function getAverageMark(marks){
             marksSum += mark;
     }
 
-    let averageMark = marksSum / marksArr.length;
-
-    return averageMark;
+    return averageMark = marksSum / marksArr.length;
 }
 
 function calculateDrinkTask(){

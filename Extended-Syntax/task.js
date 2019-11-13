@@ -34,7 +34,7 @@ function getAverageMark(marks){
 
     if (marks.length > 5) {
         console.log('Больше пяти оценок. Средний балл выведен на базе первых пяти оценок.');
-        marksArr = marks.splice(0, 5);
+        marksArr = marks.slice(0, 5);
     } else {
         marksArr = marks;
     }
@@ -46,6 +46,7 @@ function getAverageMark(marks){
     }
 
     return marksSum / marksArr.length;
+}
 
 
 function calculateDrinkTask(){

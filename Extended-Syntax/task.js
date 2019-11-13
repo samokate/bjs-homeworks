@@ -46,7 +46,7 @@ function getAverageMark(marks){
     }
 
     return marksSum / marksArr.length;
-}
+
 
 function calculateDrinkTask(){
     let name = window.personName.value;
@@ -68,6 +68,3 @@ function askDrink(name,dateOfBirthday){
 
     return result;
 }
-
-
-

@@ -12,7 +12,7 @@ function checkBirthday(birthday) {
 
     let diff = now - dateOfBirth;
 
-    let age = diff / (86400000 * 365);
+    let age = diff / (86400000 * 365); // умножаем миллисекунды в сутках на количество дней в году
 
     if (age >= 18) {
         return true;
